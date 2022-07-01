@@ -1,0 +1,38 @@
+.post-container{
+    margin-top: 72px;
+}
+
+.post-container button.active{
+    border: 0;
+    border-bottom: 2px solid #000 !important;
+    font-weight: 600;
+}
+
+.post-container button {
+    color: rgb(37, 37, 37)
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-tabs{
+        top: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-tabs{
+        top: 72px;
+    }   
+}

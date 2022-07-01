@@ -1,0 +1,7 @@
+.modal.show{
+  width: 100vw !important;
+}
+
+.modal-content {
+  width: 50vw !important;
+}

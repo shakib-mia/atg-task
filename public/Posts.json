@@ -1,0 +1,19 @@
+[{
+        "category": "Article",
+        "img": "./PostImage/postImg1.png",
+        "title": "What if famous brands had regular fonts? Meet Regular Brands",
+        "description": "I've worked in UX for the better part of a decade. From now on, I plan to rel...",
+        "author": "Sarthak Kamra",
+        "icon": "&#9997;",
+        "authorImage": "./authors/author1.png"
+    },
+    {
+        "category": "Education",
+        "img": "./PostImage/postImg2.png",
+        "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+        "description": "I've worked in UX for the better part of a decade. From now on, I plan to rel...",
+        "author": "Sarah West",
+        "authorImage": "./authors/author2.png"
+
+    }
+]
