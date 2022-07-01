@@ -37,7 +37,7 @@ const Login = () => {
             </div>
             <div className="row p-4">
               <div className="col-12 col-md-6">
-                <h6 className="text-end">
+                <h6 className="text-end d-md-none">
                   Don't have an account yet?{" "}
                   <span
                     role="button"
