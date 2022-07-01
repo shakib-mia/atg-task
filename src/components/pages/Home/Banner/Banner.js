@@ -37,6 +37,8 @@ const Banner = () => {
               type="button"
               className="btn btn-outline-light"
               id="join-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             >
               Join Group
             </label>

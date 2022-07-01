@@ -2,6 +2,45 @@
   width: 100vw !important;
 }
 
-.modal-content {
-  width: 50vw !important;
+
+
+.post-container{
+  margin-top: 72px;
+}
+
+.post-container button.active{
+  border: 0;
+  border-bottom: 2px solid #000 !important;
+  font-weight: 600;
+}
+
+.post-container button {
+  color: rgb(37, 37, 37)
+}
+
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 93vw !important;
+    margin: 0 auto;
+    bottom: -44vw !important;
+}
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+  .modal-content {
+    width: 50vw !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
