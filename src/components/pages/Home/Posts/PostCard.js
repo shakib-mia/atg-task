@@ -10,42 +10,42 @@ const PostCard = ({
   authorImage,
 }) => {
   return (
-    <div class="card my-3 col-12">
-      <img src={img} class="card-img-top" alt="blank" />
-      <div class="card-body">
+    <div className="card my-3 col-12">
+      <img src={img} className="card-img-top" alt="blank" />
+      <div className="card-body">
         <div className="d-flex align-items-center">
           <h6 className="ms-2">{category}</h6>
         </div>
         <div className="row">
           <div className="col-10">
-            <h5 class="card-title">{title}</h5>
+            <h5 className="card-title">{title}</h5>
           </div>
           <div className="col-2 text-end">
-            <div class="dropdown">
+            <div className="dropdown">
               <button
                 id="dropdownMenu2"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 className="btn btn-default"
               >
-                <i class="fa-solid fa-ellipsis"></i>
+                <i className="fa-solid fa-ellipsis"></i>
               </button>
               <ul
-                class="dropdown-menu shadow border-0"
+                className="dropdown-menu shadow border-0"
                 aria-labelledby="dropdownMenu2"
               >
                 <li>
-                  <button class="dropdown-item" type="button">
+                  <button className="dropdown-item" type="button">
                     Edit
                   </button>
                 </li>
                 <li>
-                  <button class="dropdown-item" type="button">
+                  <button className="dropdown-item" type="button">
                     Report
                   </button>
                 </li>
                 <li>
-                  <button class="dropdown-item" type="button">
+                  <button className="dropdown-item" type="button">
                     Option 3
                   </button>
                 </li>
@@ -61,10 +61,10 @@ const PostCard = ({
           </div>
           <div className="d-flex align-items-center gap-3">
             <div className="d-flex align-items-center gap-1">
-              <i class="fa fa-eye"></i>
+              <i className="fa fa-eye"></i>
               <span>1.4k Views</span>
             </div>
-            <i class="fa-solid fa-share-nodes"></i>
+            <i className="fa-solid fa-share-nodes"></i>
           </div>
         </div>
       </div>

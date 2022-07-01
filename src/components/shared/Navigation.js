@@ -12,16 +12,16 @@ const Navigation = () => {
             </a>
           </div>
           <div className="col-4">
-            <div class="input-group rounded-pill bg-light">
+            <div className="input-group rounded-pill bg-light">
               <span
-                class="input-group-text bg-transparent border-0 ms-2"
+                className="input-group-text bg-transparent border-0 ms-2"
                 id="basic-addon1"
               >
-                <i class="fa fa-search"></i>
+                <i className="fa fa-search"></i>
               </span>
               <input
                 type="text"
-                class="form-control border-0 bg-light rounded-pill"
+                className="form-control border-0 bg-light rounded-pill"
                 placeholder="Search For Your Favorite Groups in ATG"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
@@ -37,7 +37,7 @@ const Navigation = () => {
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
-                It's Free! <i class="fas fa-caret-down text-dark"></i>
+                It's Free! <i className="fas fa-caret-down text-dark"></i>
               </span>
             </div>
           </div>

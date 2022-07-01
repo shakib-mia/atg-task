@@ -12,24 +12,24 @@ const Login = () => {
   return (
     <div id="login">
       <div
-        class="modal fade position-absolute"
+        className="modal fade position-absolute"
         style={{ top: "8vw" }}
         id="exampleModal2"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabe2"
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div class="modal-content position-relative mt-5">
+          <div className="modal-content position-relative mt-5">
             <button
               type="button"
-              class="btn-close position-absolute bg-white p-2 rounded-circle"
+              className="btn-close position-absolute bg-white p-2 rounded-circle"
               style={{ right: -15, top: -45 }}
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
 
-            <div class="modal-body p-0">
+            <div className="modal-body p-0">
               <div
                 style={{ backgroundColor: "rgba(25, 135, 84,0.2)" }}
                 className="px-3 py-2"
@@ -37,7 +37,7 @@ const Login = () => {
                 <div className="text-success">
                   Let's learn, share & inspire each other with our passion for
                   computer engineering. Sign Up Now.{" "}
-                  <i class="fa fa-hand-horns"></i>
+                  <i className="fa fa-hand-horns"></i>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Login = () => {
                   Create Account
                 </div>
                 <div className="btn border-1 border-primary text-primary rounded-pill d-block ms-3 mt-3">
-                  <i class="fa-brands fa-facebook text-primary me-3"></i>
+                  <i className="fa-brands fa-facebook text-primary me-3"></i>
                   Continue With Facebook
                 </div>
                 <div className="btn border-1 border-success text-success rounded-pill d-block ms-3 mt-3">

@@ -39,8 +39,6 @@ const Posts = () => {
     if (checkbox.checked) {
       joinBtn.style.display = "none";
       leaveBtn.style.display = "block";
-    } else {
-      console.log(joinBtn);
     }
   };
 
@@ -138,7 +136,8 @@ const Posts = () => {
                   checkbox?.checked ? "d-block" : "d-none"
                 }`}
               >
-                <i class="fa-solid fa-arrow-right-from-bracket"></i> Leave Group
+                <i className="fa-solid fa-arrow-right-from-bracket"></i> Leave
+                Group
               </span>
             </label>
           </div>
@@ -257,13 +256,13 @@ const Posts = () => {
                   <h4>Software Development</h4>
                   <div className="row row-cols-2">
                     <div className="col">
-                      <i class="fas fa-briefcase "></i>
+                      <i className="fas fa-briefcase "></i>
                       <span className="ms-2">
                         Innovaccer Analytics Private Ltd.
                       </span>
                     </div>
                     <div className="col">
-                      <i class="fa fa-location-dot"></i>
+                      <i className="fa fa-location-dot"></i>
                       <span className="ms-2">Noida, India</span>
                     </div>
                   </div>
@@ -286,37 +285,37 @@ const Posts = () => {
 
                     <div className="d-flex align-items-center gap-3">
                       <div className="d-flex align-items-center gap-1">
-                        <i class="fa fa-eye"></i>
+                        <i className="fa fa-eye"></i>
                         <span>1.4k Views</span>
                       </div>
-                      <i class="fa-solid fa-share-nodes"></i>
+                      <i className="fa-solid fa-share-nodes"></i>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-12 col-lg-4 px-0 mt-3 ps-4">
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                   <span
-                    class="input-group-text bg-white border-start-0 border-end-0 border-top-0"
+                    className="input-group-text bg-white border-start-0 border-end-0 border-top-0"
                     id="basic-addon1"
                   >
-                    <i class="fa fa-location-dot"></i>
+                    <i className="fa fa-location-dot"></i>
                   </span>
                   <input
                     type="text"
-                    class="form-control border-start-0 border-end-0 border-top-0"
+                    className="form-control border-start-0 border-end-0 border-top-0"
                     placeholder="Enter Your Location"
                     aria-describedby="basic-addon1"
                   />
                   <span
-                    class="input-group-text bg-white border-start-0 border-end-0 border-top-0"
+                    className="input-group-text bg-white border-start-0 border-end-0 border-top-0"
                     id="basic-addon1"
                   >
-                    <i class="fa-solid fa-pen"></i>
+                    <i className="fa-solid fa-pen"></i>
                   </span>
                 </div>
                 <div className="d-flex align-items-center gap-2 my-5">
-                  <i class="fas fa-circle-exclamation"></i>
+                  <i className="fas fa-circle-exclamation"></i>
                   <span>
                     Your location will help us serve better and extend a
                     personalised experience.
@@ -328,7 +327,7 @@ const Posts = () => {
                   className={`${checkbox?.checked ? "d-block" : "d-none"}`}
                 >
                   <h3 className="text-uppercase">
-                    <i class="fa fa-thumbs-up me-3"></i>Recommended Groups
+                    <i className="fa fa-thumbs-up me-3"></i>Recommended Groups
                   </h3>
 
                   {groups.map((group) => (
