@@ -46,71 +46,85 @@ const Posts = () => {
     <div className="container">
       <div className="post-container pt-lg-5">
         <div
-          className="nav nav-tabs sticky-top bg-white"
+          className="nav nav-tabs sticky-top bg-white d-flex justify-content-between"
           id="nav-tab"
           role="tablist"
         >
-          <button
-            className="nav-link active"
-            id="nav-all-posts-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-all-posts"
-            type="button"
-            role="tab"
-            aria-controls="nav-all-posts"
-            aria-selected="true"
-          >
-            All Posts(32)
-          </button>
-          <button
-            className="nav-link"
-            id="nav-article-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-article"
-            type="button"
-            role="tab"
-            aria-controls="nav-article"
-            aria-selected="false"
-          >
-            Article
-          </button>
-          <button
-            className="nav-link"
-            id="nav-event-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-event"
-            type="button"
-            role="tab"
-            aria-controls="nav-event"
-            aria-selected="false"
-          >
-            Event
-          </button>
-          <button
-            className="nav-link"
-            id="nav-education-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-education"
-            type="button"
-            role="tab"
-            aria-controls="nav-education"
-            aria-selected="false"
-          >
-            Education
-          </button>
-          <button
-            className="nav-link"
-            id="nav-job-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-job"
-            type="button"
-            role="tab"
-            aria-controls="nav-job"
-            aria-selected="false"
-          >
-            Job
-          </button>
-          <div className="ms-auto my-auto">
+          <div>
+            <button
+              className="nav-link active"
+              id="nav-all-posts-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-all-posts"
+              type="button"
+              role="tab"
+              aria-controls="nav-all-posts"
+              aria-selected="true"
+            >
+              All Posts(32)
+            </button>
+          </div>
+          <div className="d-none d-md-flex">
+            <button
+              className="nav-link"
+              id="nav-article-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-article"
+              type="button"
+              role="tab"
+              aria-controls="nav-article"
+              aria-selected="false"
+            >
+              Article
+            </button>
+            <button
+              className="nav-link"
+              id="nav-event-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-event"
+              type="button"
+              role="tab"
+              aria-controls="nav-event"
+              aria-selected="false"
+            >
+              Event
+            </button>
+            <button
+              className="nav-link"
+              id="nav-education-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-education"
+              type="button"
+              role="tab"
+              aria-controls="nav-education"
+              aria-selected="false"
+            >
+              Education
+            </button>
+            <button
+              className="nav-link"
+              id="nav-job-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-job"
+              type="button"
+              role="tab"
+              aria-controls="nav-job"
+              aria-selected="false"
+            >
+              Job
+            </button>
+          </div>
+
+          <div className="dropdown d-md-none bg-light">
+            <select class="custom-select btn" id="inputGroupSelect01">
+              <option selected>Filter: All</option>
+              <option value="1">Article</option>
+              <option value="2">Event</option>
+              <option value="3">Education</option>
+              <option value="4">Job</option>
+            </select>
+          </div>
+          <div className="ms-auto my-auto d-none d-md-block">
             <button className="btn btn-light mb-1 me-3">
               Write a Post <i className="fas fa-caret-down text-dark"></i>
             </button>

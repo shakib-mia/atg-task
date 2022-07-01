@@ -4,10 +4,10 @@ import logo from "../../image/logo.png";
 const Navigation = () => {
   return (
     <div className="bg-white sticky-top">
-      <div className="container d-none d-lg-block">
+      <div className="container d-none d-md-block">
         <div className="row align-items-center py-4">
           <div className="col-4">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="https://www.atg.world/">
               <img src={logo} alt="" className="w-50" />
             </a>
           </div>

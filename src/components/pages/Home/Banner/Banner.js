@@ -21,7 +21,7 @@ const Banner = () => {
     <div className="banner-container">
       <img src={banner} alt="Banner" />
       <div className="banner-text d-flex flex-column justify-content-between">
-        <div className="d-flex  justify-content-between pt-3">
+        <div className="d-flex d-md-none justify-content-between pt-3">
           <div>
             <i className="fa-solid fa-arrow-left" role="button"></i>
           </div>
