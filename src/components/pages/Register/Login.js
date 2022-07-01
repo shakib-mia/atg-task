@@ -89,7 +89,7 @@ const Register = () => {
                 <h5>
                   Already Have an Account?{" "}
                   <a
-                    href="#"
+                    href="javascript.void(0)"
                     className="text-decoration-none"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal2"

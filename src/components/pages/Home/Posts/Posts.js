@@ -5,21 +5,31 @@ import meetup from "../../../../image/meetup.png";
 import ronal from "../../../../image/ronal-jones.png";
 import joseph from "../../../../image/joseph.png";
 import Recommended from "./Recommended";
-import leisure from "../../../../image/leisure.png";
-import activism from "../../../../image/activisim.png";
-import mba from "../../../../image/mba.png";
-import Philosophy from "../../../../image/pl=hilosophy.png";
 
 const Posts = () => {
   const [posts, getPosts] = useState([]);
+  const [groups, getGroups] = useState([]);
+
   useEffect(() => {
     fetch("Posts.json")
       .then((res) => res.json())
       .then((data) => getPosts(data));
   }, []);
 
+  useEffect(() => {
+    fetch("Groups.json")
+      .then((res) => res.json())
+      .then((data) => getGroups(data));
+  });
+
   const checkbox = document.getElementById("check");
   const joinBtn = document.getElementById("joinBtn");
+
+  const followClick = (id) => {
+    document.getElementById(id).innerText = "Following";
+    document.getElementById(id).style.backgroundColor = "black";
+    document.getElementById(id).style.color = "white";
+  };
 
   const handleCheck = () => {
     console.log(checkbox.checked);
@@ -200,7 +210,7 @@ const Posts = () => {
                     </div>
                     <p className="card-text">
                       <a
-                        href="#"
+                        href="javascript.void(0)"
                         className="d-block border text-center py-2 text-decoration-none text-danger rounded-3 mt-3"
                       >
                         Visit Website
@@ -244,7 +254,7 @@ const Posts = () => {
                     </div>
                   </div>
                   <a
-                    href="#"
+                    href="javascript.void(0)"
                     className="d-block border text-center py-2 text-decoration-none text-success rounded-3 mt-3"
                   >
                     Visit Website
@@ -303,21 +313,21 @@ const Posts = () => {
                   <h3 className="text-uppercase">
                     <i class="fa fa-thumbs-up me-3"></i>Recommended Groups
                   </h3>
-                  <Recommended
-                    groupImage={leisure}
-                    title="Leisure"
-                  ></Recommended>
-                  <Recommended
-                    groupImage={activism}
-                    title="Activism"
-                  ></Recommended>
-                  <Recommended groupImage={mba} title="MBA"></Recommended>
-                  <Recommended
-                    groupImage={Philosophy}
-                    title="Philosophy"
-                  ></Recommended>
+
+                  {groups.map((group) => (
+                    <Recommended
+                      followClick={() => followClick(group.id)}
+                      id={group.id}
+                      groupImage={group.image}
+                      title={group.name}
+                    />
+                  ))}
+
                   <div className="text-end pt-4">
-                    <a className="mt-5 text-decoration-none" href="#">
+                    <a
+                      className="mt-5 text-decoration-none"
+                      href="javascript.void(0)"
+                    >
                       See More...
                     </a>
                   </div>

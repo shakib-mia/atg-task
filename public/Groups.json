@@ -1,0 +1,17 @@
+[{
+    "id": 1,
+    "image": "./GroupImage/leisure.png",
+    "name": "Leisure"
+}, {
+    "id": 2,
+    "image": "./GroupImage/activisim.png",
+    "name": "Activism"
+}, {
+    "id": 3,
+    "image": "./GroupImage/mba.png",
+    "name": "MBA"
+}, {
+    "id": 4,
+    "image": "./GroupImage/philosophy.png",
+    "name": "Philosophy"
+}]

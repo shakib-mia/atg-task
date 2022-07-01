@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="container d-none d-lg-block">
         <div className="row align-items-center py-4">
           <div className="col-4">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="javascript.void(0)">
               <img src={logo} alt="" className="w-50" />
             </a>
           </div>
