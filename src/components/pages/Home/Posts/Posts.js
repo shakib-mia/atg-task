@@ -23,23 +23,24 @@ const Posts = () => {
   });
 
   const checkbox = document.getElementById("check");
-  const joinBtn = document.getElementById("joinBtn");
 
   const followClick = (id) => {
     document.getElementById(id).innerText = "Following";
     document.getElementById(id).style.backgroundColor = "black";
     document.getElementById(id).style.color = "white";
   };
+  const joinBtn = document.getElementById("joinButton");
+  const leaveBtn = document.getElementById("leaveButton");
+  // if (leaveBtn) {
+  //   leaveBtn.style.display = "none";
+  // }
 
   const handleCheck = () => {
-    console.log(checkbox.checked);
     if (checkbox.checked) {
-      joinBtn.innerHTML = `<span><i className="fa-solid fa-user-plus"></i> Leave Group</span>`;
-      joinBtn.classList.remove("btn-primary");
-      document.getElementById("recommended").style.display = "block";
+      joinBtn.style.display = "none";
+      leaveBtn.style.display = "block";
     } else {
-      joinBtn.innerHTML = `<span><i className="fa-solid fa-user-plus"></i>  Join Group</span>`;
-      document.getElementById("recommended").style.display = "none";
+      console.log(joinBtn);
     }
   };
 
@@ -112,18 +113,32 @@ const Posts = () => {
             Job
           </button>
           <div className="ms-auto my-auto">
-            <button className="btn btn-light">
+            <button className="btn btn-light mb-1 me-3">
               Write a Post <i className="fas fa-caret-down text-dark"></i>
             </button>
-            <label htmlFor="check" className="btn btn-primary text-white mx-2">
-              <input
-                type="checkbox"
-                className="d-none"
-                id="check"
-                onChange={handleCheck}
-              />
-              <span id="joinBtn">
+
+            <input
+              type="checkbox"
+              className="d-none"
+              id="check"
+              onChange={handleCheck}
+            />
+            <label htmlFor="check">
+              <span
+                id="joinButton"
+                className={`btn btn-primary ${
+                  checkbox?.checked ? "d-none" : "d-block"
+                }`}
+              >
                 <i className="fa-solid fa-user-plus"></i> Join Group
+              </span>
+              <span
+                id="leaveButton"
+                className={`btn btn-light ${
+                  checkbox?.checked ? "d-block" : "d-none"
+                }`}
+              >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Leave Group
               </span>
             </label>
           </div>
@@ -309,7 +324,10 @@ const Posts = () => {
                   </span>
                 </div>
 
-                <div id="recommended">
+                <div
+                  id="recommended"
+                  className={`${checkbox?.checked ? "d-block" : "d-none"}`}
+                >
                   <h3 className="text-uppercase">
                     <i class="fa fa-thumbs-up me-3"></i>Recommended Groups
                   </h3>
