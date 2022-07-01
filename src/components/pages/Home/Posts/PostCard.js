@@ -14,7 +14,6 @@ const PostCard = ({
       <img src={img} class="card-img-top" alt="blank" />
       <div class="card-body">
         <div className="d-flex align-items-center">
-          <span>{icon}</span>
           <h6 className="ms-2">{category}</h6>
         </div>
         <div className="row">

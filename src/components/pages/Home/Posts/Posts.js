@@ -25,7 +25,7 @@ const Posts = () => {
   const checkbox = document.getElementById("check");
 
   const followClick = (id) => {
-    document.getElementById(id).innerText = "Following";
+    document.getElementById(id).innerText = "Followed";
     document.getElementById(id).style.backgroundColor = "black";
     document.getElementById(id).style.color = "white";
   };
@@ -169,8 +169,7 @@ const Posts = () => {
                   <img src={meetup} className="card-img-top" alt="blank" />
                   <div className="card-body">
                     <div className="d-flex align-items-center">
-                      <i class="fa-solid fa-calendar"></i>
-                      <h6 className="ms-2 mt-2">Meetup</h6>
+                      <h6 className="ms-2 mt-2">🗓️ Meetup</h6>
                     </div>
                     <div className="row">
                       <div className="col-10">
@@ -252,8 +251,8 @@ const Posts = () => {
                 </div>
 
                 <div className="card p-3">
-                  <div>
-                    <i class="fas fa-briefcase"></i>
+                  <div className="d-flex align-items-center fw-bold">
+                    💼️ Job
                   </div>
                   <h4>Software Development</h4>
                   <div className="row row-cols-2">
