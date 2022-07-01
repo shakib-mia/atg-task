@@ -3,23 +3,28 @@ import register from "../../../image/register.png";
 import "./Register.local.css";
 import google from "../../../image/google.png";
 
-const Register = () => {
+const Login = () => {
+  const handleChange = () => {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("register").style.display = "block";
+  };
+
   return (
-    <div>
+    <div id="login">
       <div
         class="modal fade position-absolute"
-        style={{ top: 10 }}
+        style={{ top: "8vw" }}
         id="exampleModal2"
         tabindex="-1"
         aria-labelledby="exampleModalLabe2"
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div class="modal-content position-relative">
+          <div class="modal-content position-relative mt-5">
             <button
               type="button"
               class="btn-close position-absolute bg-white p-2 rounded-circle"
-              style={{ right: -20, top: -30 }}
+              style={{ right: -15, top: -45 }}
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
@@ -36,41 +41,22 @@ const Register = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row p-4">
               <div className="col-6">
-                <h1>Create Account</h1>
+                <h1 className="ms-3">Sign In</h1>
                 <div className="input-group mx-3">
-                  <div className="d-flex">
-                    <input
-                      className="bg-light border-1 py-1"
-                      type="text"
-                      style={{ width: "12vw" }}
-                      placeholder="First Name"
-                    />
-                    <input
-                      className="bg-light border-1 py-1"
-                      type="text"
-                      style={{ width: "12vw" }}
-                      placeholder="Last Name"
-                    />
-                  </div>
+                  <br />
                   <input
-                    className="bg-light border-1 py-1"
+                    className="bg-light border-1 py-2"
                     style={{ width: "100vw", marginRight: 4 }}
                     type="email"
                     placeholder="Email"
                   />
                   <input
-                    className="bg-light border-1 py-1"
+                    className="bg-light border-1 py-2"
                     style={{ width: "100vw", marginRight: 4 }}
                     type="password"
                     placeholder="Password"
-                  />
-                  <input
-                    className="bg-light border-1 py-1"
-                    style={{ width: "100vw", marginRight: 4 }}
-                    type="password"
-                    placeholder="Confirm Password"
                   />
                 </div>
                 <div className="btn btn-primary rounded-pill d-block ms-3 mt-3">
@@ -86,17 +72,17 @@ const Register = () => {
                 </div>
               </div>
               <div className="col-6">
-                <h5>
-                  Already Have an Account?{" "}
-                  <a
-                    href="javascript.void(0)"
-                    className="text-decoration-none"
+                <h6 className="text-end">
+                  Don't have an account yet?{" "}
+                  <span
+                    role="button"
+                    className="text-primary"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
+                    data-bs-target="#exampleModal"
                   >
-                    Sign In
-                  </a>
-                </h5>
+                    Create new for free!
+                  </span>
+                </h6>
                 <img src={register} className="img-fluid" alt="" />
               </div>
             </div>
@@ -107,4 +93,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

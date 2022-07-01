@@ -2,12 +2,12 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/shared/Navigation";
 import Home from "./components/pages/Home/Home";
-import Register from "./components/pages/Register/Register";
+import Entry from "./components/pages/Register/Entry";
 
 function App() {
   return (
     <div>
-      <Register></Register>
+      <Entry></Entry>
       <Navigation></Navigation>
       <Home></Home>
     </div>

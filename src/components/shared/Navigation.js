@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className="container d-none d-lg-block">
         <div className="row align-items-center py-4">
           <div className="col-4">
-            <a className="navbar-brand" href="javascript.void(0)">
+            <a className="navbar-brand" href="#">
               <img src={logo} alt="" className="w-50" />
             </a>
           </div>
@@ -31,13 +31,14 @@ const Navigation = () => {
           <div className="col-4">
             <div className="text-end">
               Create Account{" "}
-              <a
-                className="text-decoration-none fw-bold"
+              <span
+                className="text-primary fw-bold"
+                role="button"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
                 It's Free! <i class="fas fa-caret-down text-dark"></i>
-              </a>
+              </span>
             </div>
           </div>
         </div>
